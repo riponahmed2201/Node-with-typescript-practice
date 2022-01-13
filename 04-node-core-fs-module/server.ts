@@ -14,7 +14,14 @@ const server:Server = http.createServer((request:IncomingMessage, response:Serve
         if (error) {
             console.log(error);
         }
-        response.end(`<pre>${result}</pre>`);
+        fs.writeFile(path.join(__dirname,'data','data.txt'),result,'utf-8',(error)=>{
+            if (error) {
+                console.log(error);
+            }
+        });
+
+        response.end(`<pre>Data is written to the file</pre>`);
+
     });
 });
 

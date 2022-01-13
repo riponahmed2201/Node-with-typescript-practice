@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ec2620e-ee69-4090-9d4b-5388820728d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/04-node-core-fs-module/data/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-node-core-fs-module/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-node-core-fs-module/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-node-core-fs-module/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-node-core-fs-module/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-node-core-fs-module/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/04-node-core-fs-module/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642050826724</updated>
-      <workItem from="1642050828418" duration="9502000" />
+      <workItem from="1642050828418" duration="9908000" />
     </task>
     <servers />
   </component>

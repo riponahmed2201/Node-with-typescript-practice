@@ -1,21 +1,24 @@
 import http, {Server, IncomingMessage, ServerResponse} from 'http';
-import fs from 'fs';
-import path from 'path';
+import os from 'os';
 
 const hostname:string = '127.0.0.1';
-const port:number = 3000;
+const port:number = 4000;
 
 const server:Server = http.createServer((request:IncomingMessage, response:ServerResponse)=>{
     response.statusCode = 200;
     response.setHeader('Content-Type', 'text/html');
 
-    // fs Module
-    fs.readFile(path.join(__dirname,'data','notes.txt'),'utf-8',(error, result)=>{
-        if (error) {
-            console.log(error);
-        }
-        response.end(`<pre>${result}</pre>`);
-    });
+    // OS Module
+    let osData = {
+        totalMemory : os.totalmem(),
+        freememory : os.freemem(),
+        homedir : os.homedir(),
+        computerName : os.hostname()
+    };
+
+    response.end(`<pre>${JSON.stringify(osData)}</pre>`);
+
+   // response.end(`<h style="font-family: Lato,sans-serif; color: green">Welcome to Node JS Server</h>`)
 });
 
 server.listen(port, hostname, ()=>{
